@@ -1,5 +1,7 @@
+import { Notification } from '../interfaces/notification'
+
 export class LogService {
-  logInformation(title: string, message: string): void {
-    console.log(title, message)
+  logInformation(notification: Notification): void {
+    console.log(notification.title, notification.message)
   }
 }
